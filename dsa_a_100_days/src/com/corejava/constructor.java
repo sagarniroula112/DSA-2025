@@ -15,7 +15,7 @@ class Pen {
 	// data and members (functions) of the class Pen
 }
 
-class Student {
+class Student1 {
 	String name;
 	int age;
 	
@@ -24,13 +24,13 @@ class Student {
 		System.out.println(this.age);
 	}
 	
-	Student(String name, int age){
+	Student1(String name, int age){
 		this.name = name; // when making that new object, take name and age from parameters and set object's data.
 		this.age = age;
 	}
 	
 	// Copy Constructor
-	Student(Student s2){
+	Student1(Student1 s2){
 		this.name = s2.name;
 		 this.age = s2.age;
 	}
@@ -50,7 +50,7 @@ public class constructor {
 		pen1.printColor();
 		pen2.printColor();
 		
-		Student s1 = new Student("Hari", 24);
+		Student1 s1 = new Student1("Hari", 24);
 		// "new" keyword: space is allocated inside memory heap to store our object
 		// but why parenthesis? it is called a constructor, to construct java objects
 		
@@ -63,7 +63,7 @@ public class constructor {
 		// 1. Parameterized, Non-parameterized, Copy constructor
 		// Copy Constructor - Used to copy objects
 		
-		Student s2 = new Student(s1);
+		Student1 s2 = new Student1(s1);
 		s2.printInfo();
 		
 		s1.printInfo();
