@@ -1,0 +1,55 @@
+Basic Tasks:
+1. Constructor and Encapsulation:
+Task: Create a Book class with private attributes: title, author, and price. Write a constructor to initialize these attributes and use getter and setter methods to access and modify the data.
+Objective: Practice creating constructors, getters, setters, and enforcing data encapsulation.
+2. Basic Inheritance:
+Task: Create a Vehicle class with attributes make, model, and year. Create a Car class that extends Vehicle and adds an additional attribute: fuelType.
+Objective: Practice inheritance and understand how child classes inherit from parent classes.
+3. Polymorphism with Method Overloading:
+Task: Create a Shape class with methods area() and perimeter(). Create different classes like Circle and Rectangle that implement these methods differently. Use method overloading to add a method area() that accepts different parameters.
+Objective: Learn how to achieve compile-time polymorphism with method overloading.
+4. Basic Interface Implementation:
+Task: Create an interface Animal with methods eat() and sleep(). Create a Dog class that implements the Animal interface and provides its own implementation of these methods.
+Objective: Practice interface implementation and understand its use in achieving abstraction.
+Intermediate Tasks:
+5. Constructor Overloading:
+Task: Create a Student class with constructor overloading. One constructor should accept name and age, while another should accept name, age, and grade.
+Objective: Learn to overload constructors and initialize objects in different ways.
+6. Inheritance with Overriding:
+Task: Create a Person class with name and age. Create a Student class that extends Person and overrides the toString() method to print additional student details.
+Objective: Learn how to override methods in subclasses and understand runtime polymorphism.
+7. Abstract Classes and Interfaces:
+Task: Create an abstract class Appliance with an abstract method turnOn(). Create a class WashingMachine that extends Appliance and implements turnOn(). Also, create a RemoteControl interface and make WashingMachine implement it.
+Objective: Learn the difference between abstract classes and interfaces, and when to use them.
+8. Package Management:
+Task: Create a package com.company.hr with classes like Employee and Manager. Create another package com.company.sales with a SalesPerson class. Import and use the classes from both packages in a Main class.
+Objective: Learn how to organize classes into packages and manage imports.
+Advanced Tasks:
+9. Polymorphism with Interface:
+Task: Create an interface PaymentMethod with a method processPayment(). Implement the interface in CreditCard, DebitCard, and PayPal classes. Use polymorphism to process payments through different methods.
+Objective: Master runtime polymorphism and interface-based design.
+10. Access Modifiers and Encapsulation:
+Task: Create a class BankAccount with private attributes balance and accountNumber. Provide public getter and setter methods. Implement the withdrawal method where the balance cannot go below a certain limit.
+Objective: Understand the use of access modifiers and the importance of proper encapsulation.
+11. Complex Inheritance Hierarchy:
+Task: Create a class hierarchy for an online shopping system. Start with an abstract class Product and extend it to create specific product types like Clothing, Electronics, and Food. Each subclass should have a method applyDiscount(). Create a ShoppingCart class that holds a list of products and calculates the total price.
+Objective: Practice complex inheritance and work with abstract methods and polymorphism.
+12. Singleton Pattern:
+Task: Create a DatabaseConnection class that ensures only one instance of the database connection exists at a time using the Singleton Design Pattern.
+Objective: Implement a design pattern to manage global access to a resource.
+13. File Handling and Serialization:
+Task: Create a Student class with attributes like name and grade. Serialize a list of Student objects into a file and then deserialize them back into objects.
+Objective: Learn about serialization and file I/O in Java.
+14. Lambda Expressions and Functional Interfaces:
+Task: Create a functional interface MathOperation with a method operate(). Implement the interface using a lambda expression to perform various operations like addition, subtraction, multiplication, etc.
+Objective: Learn lambda expressions and how to use them with functional interfaces.
+15. Multithreading and Concurrency:
+Task: Create a program that simulates multiple bank accounts and performs concurrent deposits and withdrawals using threads.
+Objective: Get hands-on with multithreading and understand the challenges of concurrency.
+Bonus Tasks:
+16. Design a Mini Banking System:
+Task: Create a banking system where you can perform actions like creating an account, depositing money, withdrawing money, and checking the balance. Use Object-Oriented Principles for structuring your classes.
+Objective: Implement all OOP concepts in a real-world scenario.
+17. Student Management System:
+Task: Create a Student Management System where you can add, remove, and display students' details. Use inheritance for Undergraduate and Postgraduate classes.
+Objective: Deep dive into OOP principles like inheritance, encapsulation, and polymorphism.
