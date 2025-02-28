@@ -11,6 +11,8 @@ Objective: Learn how to achieve compile-time polymorphism with method overloadin
 4. Basic Interface Implementation:
 Task: Create an interface Animal with methods eat() and sleep(). Create a Dog class that implements the Animal interface and provides its own implementation of these methods.
 Objective: Practice interface implementation and understand its use in achieving abstraction.
+
+
 Intermediate Tasks:
 5. Constructor Overloading:
 Task: Create a Student class with constructor overloading. One constructor should accept name and age, while another should accept name, age, and grade.
@@ -24,6 +26,8 @@ Objective: Learn the difference between abstract classes and interfaces, and whe
 8. Package Management:
 Task: Create a package com.company.hr with classes like Employee and Manager. Create another package com.company.sales with a SalesPerson class. Import and use the classes from both packages in a Main class.
 Objective: Learn how to organize classes into packages and manage imports.
+
+
 Advanced Tasks:
 9. Polymorphism with Interface:
 Task: Create an interface PaymentMethod with a method processPayment(). Implement the interface in CreditCard, DebitCard, and PayPal classes. Use polymorphism to process payments through different methods.
@@ -46,6 +50,8 @@ Objective: Learn lambda expressions and how to use them with functional interfac
 15. Multithreading and Concurrency:
 Task: Create a program that simulates multiple bank accounts and performs concurrent deposits and withdrawals using threads.
 Objective: Get hands-on with multithreading and understand the challenges of concurrency.
+
+
 Bonus Tasks:
 16. Design a Mini Banking System:
 Task: Create a banking system where you can perform actions like creating an account, depositing money, withdrawing money, and checking the balance. Use Object-Oriented Principles for structuring your classes.
