@@ -1,4 +1,4 @@
-package com.corejava.bank;
+package com.corejava.OOPS.bank;
 
 import java.util.*;
 

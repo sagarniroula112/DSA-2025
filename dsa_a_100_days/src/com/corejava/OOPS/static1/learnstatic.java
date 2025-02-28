@@ -1,4 +1,4 @@
-package com.corejava.static1;
+package com.corejava.OOPS.static1;
 
 class Student {
     String name;

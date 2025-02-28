@@ -1,4 +1,4 @@
-package com.corejava;
+package com.corejava.OOPS;
 
 interface Animal {
     int eyes = 2;
