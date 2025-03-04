@@ -2,6 +2,9 @@ package com.corejava.Multithreading;
 
 // Second way to create thread -> By creating a class that extends Thread class.
 
+// Implementing Runnable is better: My thread class doesnot need to inherit Thread, making it free to inherit a 
+// differnt class.
+
 class NewThread1 extends Thread {
     NewThread1() {
         super("Demo Thread.");
