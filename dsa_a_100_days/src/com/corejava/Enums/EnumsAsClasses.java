@@ -3,13 +3,18 @@ package com.corejava.Enums;
 // Use of enum constructor, instance variable and method.
 
 enum Friends {
-    Rakesh(10, "Dhangadhi"), Prajwal(20, "Dhapakhel"), Samrat(5, "Pokhara"), Nirajan(12, "Butwal");
+    Rakesh(10, "Dhangadhi"), Prajwal(), Samrat(5, "Pokhara"), Nirajan(12, "Butwal");
     private int price;
     private String location;
 
     Friends(int p, String l) {
         price = p;
         location = l;
+    }
+
+    Friends() {  // OVERLOADED CONSTRUCTOR VvImp!
+        price = -1;
+        location = "Lavanya desh";
     }
 
     String getLocation() {
