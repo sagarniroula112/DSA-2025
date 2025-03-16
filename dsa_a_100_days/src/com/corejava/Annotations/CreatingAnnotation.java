@@ -1,14 +1,14 @@
-package com.corejava.Annotations;
+// package com.corejava.Annotations;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
+// import java.lang.annotation.Retention;
+// import java.lang.annotation.RetentionPolicy;
 
-@Retention(RetentionPolicy.RUNTIME)
-@interface MyAnno {
-    String str();
-    int val();
-}
+// @Retention(RetentionPolicy.RUNTIME)
+// @interface MyAnno {
+//     String str();
+//     int val();
+// }
 
-public class CreatingAnnotation {
+// public class CreatingAnnotation {
     
-}
+// }
