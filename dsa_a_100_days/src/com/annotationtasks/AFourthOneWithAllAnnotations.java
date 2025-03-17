@@ -1,7 +1,5 @@
 package com.annotationtasks;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
 import java.lang.reflect.Method;
 import java.lang.annotation.*;
 
@@ -32,8 +30,19 @@ public class AFourthOneWithAllAnnotations {
 
             System.out.println("********* CLASS KO ANNOTATIONS! *********");
 
+            // Check class annotations
+            System.out.println("isAnnotationPresent (MyAnnotation1 on class): " + c.isAnnotationPresent(MyAnnotation1.class));
+            System.out.println("isAnnotationPresent (MyAnnotation2 on class): " + c.isAnnotationPresent(MyAnnotation2.class));
+
             Annotation[] annos = c.getAnnotations();
             for(Annotation a : annos) {
+                System.out.println(a);
+            }
+
+            // Using getDeclaredAnnotations() to get only declared annotations (not inherited)
+            System.out.println("Using getDeclaredAnnotations():");
+            Annotation[] classDeclaredAnnos = c.getDeclaredAnnotations();
+            for (Annotation a : classDeclaredAnnos) {
                 System.out.println(a);
             }
 
@@ -41,6 +50,13 @@ public class AFourthOneWithAllAnnotations {
 
             annos = m.getAnnotations();
             for(Annotation a : annos) {
+                System.out.println(a);
+            }
+
+            // Using getDeclaredAnnotations() to get only declared annotations on the method
+            System.out.println("Using getDeclaredAnnotations():");
+            Annotation[] methodDeclaredAnnos = m.getDeclaredAnnotations();
+            for (Annotation a : methodDeclaredAnnos) {
                 System.out.println(a);
             }
         } catch(NoSuchMethodException e) {
