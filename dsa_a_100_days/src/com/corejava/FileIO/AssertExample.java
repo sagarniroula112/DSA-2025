@@ -14,6 +14,8 @@ public class AssertExample {
             n = getnum();
 
             assert n>0;
+            // OR
+            assert n>0: "n is not positive!";
             System.out.println("n is: " + n);
         }
     }
