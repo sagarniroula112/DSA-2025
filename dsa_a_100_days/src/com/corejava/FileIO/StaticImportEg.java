@@ -3,6 +3,8 @@ package com.corejava.FileIO;
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 
+import static java.lang.System.out;
+
 public class StaticImportEg {
     public static void main(String[] args) {
         double side1, side2;
@@ -11,6 +13,6 @@ public class StaticImportEg {
         side2=4.0;
 
         hypot = sqrt(pow(side1, 2) + pow(side2, 2));
-        System.out.println(hypot);
+        out.println(hypot);
     }
 }
