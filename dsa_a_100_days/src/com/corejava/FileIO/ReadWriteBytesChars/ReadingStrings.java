@@ -1,4 +1,4 @@
-package com.corejava.FileIO;
+package com.corejava.FileIO.ReadWriteBytesChars;
 
 import java.io.BufferedReader;
 import java.io.IOException;

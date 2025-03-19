@@ -1,4 +1,4 @@
-package com.corejava.FileIO;
+package com.corejava.FileIO.ReadWriteBytesChars;
 
 public class WritingConsoleOp {
     public static void main(String[] args) {
