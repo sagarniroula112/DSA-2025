@@ -1,6 +1,6 @@
 package com.DSA;
 
-public class Array {
+class Array {
     // Arrays store data sequentially in memory. So lookup is simple and always O(1), insertion and deletion is O(n) in worst cases.
 
     // We need to make sure our array is dynamic and can accept data when full.
@@ -20,6 +20,23 @@ public class Array {
         for(int i=0;i<count;i++) {
             System.out.println(items[i]);
         }
+    }
+
+    public void insert(int item) {
+        // If array is full, make a new array with double of current size, copy them all and add that new item there.
+        // If able to insert, then insert it at the end.
+
+        if(items.length == count) {
+            int[] newItems = new int[count*2];
+
+            for(int i=0;i<count;i++) {
+                newItems[i] = items[i];
+            }
+
+            items = newItems;
+        }
+        items[count] = item;
+        count++;
     }
 
     
