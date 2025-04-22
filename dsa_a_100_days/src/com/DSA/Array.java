@@ -39,6 +39,20 @@ class Array {
         count++;
     }
 
-    
+    public void removeAt(int index) {
+        for(int i=index; i<count-1;i++) {
+            items[i] = items[i+1];
+        }
+        count--;
+    }
+
+    public int indexOf(int item) {
+        for(int i=0;i<count;i++) {
+            if(items[i] == item) {
+                return i;
+            }
+        }
+        return -1;
+    }
 
 }
