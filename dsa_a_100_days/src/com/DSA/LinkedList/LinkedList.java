@@ -53,6 +53,26 @@ public class LinkedList {
         length = length + 1;
     }
 
+    public Node removeLast() {
+        if(length == 0) return null; // Case for when initially we start with 0 nodes in linked list.
+
+        Node pre = head;
+        Node temp = head;
+        while(temp.next != null) {
+            pre = temp;
+            temp = temp.next;
+        }
+        tail = pre;
+        tail.next = null;
+        length--;
+        if(length == 0) { // Case for when there is only one node in linked list.
+            head = null;
+            tail = null;
+        }
+
+        return temp;
+    }
+
     // public void prepend(int value) {}
 
     // public boolean insert(int index, int value) {}
