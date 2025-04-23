@@ -1,4 +1,4 @@
-package com.DSA;
+package com.DSA.Arrays;
 
 class Array {
     // Arrays store data sequentially in memory. So lookup is simple and always O(1), insertion and deletion is O(n) in worst cases.
