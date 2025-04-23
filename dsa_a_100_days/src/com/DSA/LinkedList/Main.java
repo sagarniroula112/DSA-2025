@@ -6,10 +6,28 @@ public class Main {
 
         myLinkedList.append(2);
 
-        System.out.println(myLinkedList.removeLast().value);
-        System.out.println(myLinkedList.removeLast().value);
-        System.out.println(myLinkedList.removeLast());
+        myLinkedList.printList();
+        System.out.println("-----------------------------");
 
-        // myLinkedList.printList();
+        myLinkedList.prepend(3);
+
+        // System.out.println(myLinkedList.removeLast().value);
+        // System.out.println(myLinkedList.removeLast().value);
+        // System.out.println(myLinkedList.removeLast());
+
+        myLinkedList.printList();
+
+        System.out.println("----------------------------");
+        myLinkedList.removeFirst();
+        myLinkedList.printList();
+        System.out.println("----------------------------");
+        myLinkedList.removeFirst();
+        myLinkedList.printList();
+        System.out.println("----------------------------");
+        myLinkedList.removeFirst();
+        myLinkedList.printList();
+        System.out.println("----------------------------");
+        System.out.println(myLinkedList.removeFirst());
+        myLinkedList.printList();
     }
 }
