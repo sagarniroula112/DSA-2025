@@ -103,5 +103,33 @@ public class LinkedList {
         return removal;
     }
 
+    public Node get(int index) {
+        if(length < 0 || index >= length) {
+            return null;
+        }        
+        
+        Node temp = head;
+
+        for(int i=0;i<index;i++) {
+            temp = temp.next;
+        }
+
+        return temp;
+    }
+
+    public boolean set(int index, int value) {
+        if(index < 0 || index >= length) {
+            return false;
+        }
+
+        Node temp = head;
+        for(int i=0;i<index;i++) {
+            temp = temp.next;
+        }
+
+        temp.value = value;
+        return true;
+    }
+
     // public boolean insert(int index, int value) {}
 }
