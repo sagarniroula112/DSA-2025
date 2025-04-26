@@ -203,4 +203,40 @@ public class LinkedList {
             temp = after;
         }
     }
+
+    // public Node findMiddleNode() {
+    //     int count = 1;
+    //     Node temp = head;
+        
+    //     while(temp.next != null) {
+    //         temp = temp.next;
+    //         count++;
+    //     }
+    //     double mid = count/2;
+    //     if(mid % 2 != 0) {
+    //         mid = (count/2) + 0.5;
+    //     }
+
+    //     int indx = (int)mid;
+
+    //     temp = head;
+    //     for(int i=0;i<indx;i++) {
+    //         temp = temp.next;
+    //     }
+    //     return temp;
+    // }
+
+    public Node findMiddleNode() {
+        Node slow = head;
+        Node fast = head;
+
+        while(fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        return slow;
+    }
+
+    
 }
