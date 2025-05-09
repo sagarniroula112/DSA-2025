@@ -89,6 +89,21 @@ public class DoublyLinkedList {
         length--;
 
         return temp;
+
+        // if(length == 0) return null;
+        
+        // Node temp = head;
+        // head = head.next;
+        // head.prev = null;
+        // temp.next = null;
+        // length--;
+        
+        // if(length == 0) {
+        //     head = null;
+        //     tail = null;
+        // }
+        
+        // return temp;
     }
 
     public Node get(int index) {

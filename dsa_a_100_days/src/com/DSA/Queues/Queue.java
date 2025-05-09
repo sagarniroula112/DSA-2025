@@ -34,26 +34,28 @@ public class Queue {
 
     public void enqueue(int value) {
         Node newNode = new Node(value);
-        Node temp = null;
 
         if(length == 0) {
             first = newNode;
             last = newNode;
         } else {
-            temp = last;
-            temp.next = newNode;
+            last.next = newNode;
             last = newNode;
         }
         length++;
     }
 
     public Node dequeue() {
-        if(length == 0) return null;
         Node temp = first;
-
-        first = temp.next;
-        temp.next = null;
-
+        if(length == 0) return null;
+        if(length == 1) {
+            first = null;
+            last = null;
+        } else {
+            first = temp.next;
+            temp.next = null;
+        }
+        length--;
         return temp;
     }
 }
